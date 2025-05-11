@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				professor: {
+					'maroon': '#800000',
+					'navy': '#012169',
+					'gold': '#B3A369',
+					'cream': '#F5F5F5',
+					'light-gray': '#E5E5E5',
+					'dark-gray': '#333333'
 				}
+			},
+			fontFamily: {
+				'serif': ['Merriweather', 'serif'],
+				'sans': ['Roboto', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
