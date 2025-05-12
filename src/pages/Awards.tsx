@@ -1,56 +1,66 @@
 
 import React from 'react';
 import PageHeader from '../components/PageHeader';
+import { Award, GraduationCap } from 'lucide-react';
 
 const Awards = () => {
   const awardsData = [
     {
       year: "2024",
       title: "Research Excellence-2024, Senior Researcher Award (Engineering)",
-      organization: "IIT Jodhpur"
+      organization: "IIT Jodhpur",
+      image: "/award-iitj-research.jpg"
     },
     {
       year: "2021",
       title: "IETE-Bapuseetharam Award 2021",
-      organization: "The Institution of Electronics and Telecommunication Engineers (IETE) India"
+      organization: "The Institution of Electronics and Telecommunication Engineers (IETE) India",
+      image: "/award-iete.jpg"
     },
     {
       year: "2021",
       title: "Outstanding Engineering Services to Society Award 2021",
-      organization: "The Institute of Engineers (India) Rajasthan State Centre"
+      organization: "The Institute of Engineers (India) Rajasthan State Centre",
+      image: "/award-engineer-india.jpg"
     },
     {
       year: "2020",
       title: "CSIR Technology Award (Innovation)",
       organization: "Council of Scientific and Industrial Research",
-      description: "For 'Developing a low-cost multipurpose handheld Raman spectrometer for automated analytical and diagnostic application, particularly for testing of food and pharmaceutical adulteration'."
+      description: "For 'Developing a low-cost multipurpose handheld Raman spectrometer for automated analytical and diagnostic application, particularly for testing of food and pharmaceutical adulteration'.",
+      image: "/award-csir.jpg"
     },
     {
       year: "2013",
       title: "DST-UKIERI Thematic Partnerships Award",
-      organization: "India"
+      organization: "India",
+      image: "/award-ukieri.jpg"
     },
     {
       year: "2009",
       title: "IME Excellence Award 2009 – Industry Project Category",
       organization: "Institute of Microelectronics (IME), Singapore",
-      description: "For the project 'Development of the Surrounding Gate Transistor Structure and Process Technologies'."
+      description: "For the project 'Development of the Surrounding Gate Transistor Structure and Process Technologies'.",
+      image: "/award-ime.jpg"
     },
     {
       year: "2008",
       title: "National Technology Award",
       organization: "Singapore",
-      description: "Singapore's highest honour presented to recognise outstanding research scientists and engineers for their invaluable contributions to the development of Science & Technology in Singapore. Award conferred for 'pioneering the novel transistor architectures and a new class of electronic bio-sensors based on Silicon-nanowires'."
+      description: "Singapore's highest honour presented to recognise outstanding research scientists and engineers for their invaluable contributions to the development of Science & Technology in Singapore. Award conferred for 'pioneering the novel transistor architectures and a new class of electronic bio-sensors based on Silicon-nanowires'.",
+      image: "/award-singapore.jpg"
     },
     {
       year: "2006",
       title: "Collaboration Development Award",
-      organization: "British High Commission, Singapore"
+      organization: "British High Commission, Singapore",
+      image: "/award-british-high.jpg"
     },
     {
       year: "2005",
       title: "Collaboration Development Award",
-      organization: "British High Commission, Singapore"
+      organization: "British High Commission, Singapore",
+      image: "/award-british-high.jpg"
     }
   ];
 
@@ -97,6 +107,104 @@ const Awards = () => {
     }
   ];
 
+  const completedPhDScholars = [
+    {
+      name: "Ms Tang Min",
+      university: "Nanyang Technological University, Singapore",
+      year: 2007
+    },
+    {
+      name: "Ms Bi Xinyan",
+      university: "National University of Singapore, Singapore",
+      year: 2009
+    },
+    {
+      name: "Mr Tze Sian Pui",
+      university: "Nanyang Technological University, Singapore",
+      year: 2010
+    },
+    {
+      name: "Mr Venkateswaran PS",
+      university: "University of Petroleum and Energy Studies, Dehradun India",
+      year: 2016
+    },
+    {
+      name: "Mr Rahul Prajesh",
+      university: "AcSIR, CSIR-CEERI, Pilani",
+      year: 2018
+    },
+    {
+      name: "Mr Rohit Singh",
+      university: "IIT Indore",
+      year: 2018
+    },
+    {
+      name: "Mrs Smiti Sachdeva",
+      university: "Thapar University",
+      year: 2019
+    },
+    {
+      name: "Mr Pankaj Bhooshan Agarwal",
+      university: "AcSIR, CSIR-CEERI, Pilani",
+      year: 2019
+    },
+    {
+      name: "Mrs Tamalika Bhakat",
+      university: "BITS, Pilani",
+      year: 2019
+    },
+    {
+      name: "Mr. Md Arif Khan",
+      university: "IIT Indore",
+      year: 2020
+    },
+    {
+      name: "Ms. Prerna Balyan",
+      university: "AcSIR, CSIR-CEERI, Pilani",
+      year: 2021
+    },
+    {
+      name: "Ms. Anju Yadav",
+      university: "AcSIR, CSIR-CEERI, Pilani",
+      year: 2021
+    },
+    {
+      name: "Mr Arun Johar",
+      university: "MNIT, Jaipur",
+      year: 2021
+    },
+    {
+      name: "Ms. Sumita Choudhary",
+      university: "BITS, Pilani",
+      year: 2021
+    },
+    {
+      name: "Mr Satya Dev",
+      university: "GJU, Hissar",
+      year: 2022
+    },
+    {
+      name: "Mr Pawan Kumar",
+      university: "IIT Indore",
+      year: 2023
+    },
+    {
+      name: "Mr Sanjay Kumar",
+      university: "IIT Indore",
+      year: 2023
+    },
+    {
+      name: "Mr Vikram Maharshi",
+      university: "IIT Delhi",
+      year: 2023
+    },
+    {
+      name: "Mr. Rakesh Kumar Saini",
+      university: "AcSIR, CSIR-CEERI, Pilani",
+      year: 2024
+    }
+  ];
+
   return (
     <div>
       <PageHeader 
@@ -106,7 +214,11 @@ const Awards = () => {
 
       <div className="container mx-auto px-4 py-12">
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-8 text-professor-navy">Awards & Honors</h2>
+          <div className="flex items-center mb-8">
+            <Award className="text-professor-navy mr-2" size={24} />
+            <h2 className="text-2xl font-bold text-professor-navy">Awards & Honors</h2>
+          </div>
+
           <div className="relative">
             {/* Timeline line */}
             <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-professor-navy/20"></div>
@@ -122,15 +234,70 @@ const Awards = () => {
                   </div>
                   
                   <div className={`md:w-1/2 bg-white p-6 rounded-lg shadow-md ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
-                    <div className="inline-block px-3 py-1 bg-professor-gold/20 text-professor-navy text-sm font-medium rounded mb-3">
-                      {award.year}
+                    <div className="flex flex-col md:flex-row gap-4">
+                      {award.image && (
+                        <div className="md:w-1/3">
+                          <div className="rounded-lg overflow-hidden shadow-sm bg-gray-100 aspect-video flex items-center justify-center">
+                            <img 
+                              src={award.image}
+                              alt={`${award.title} award`}
+                              className="object-cover w-full h-full"
+                              onError={(e) => {
+                                (e.target as HTMLImageElement).src = 'https://placehold.co/400x300?text=Award+Image';
+                              }}
+                            />
+                          </div>
+                        </div>
+                      )}
+                      <div className={award.image ? "md:w-2/3" : "w-full"}>
+                        <div className="inline-block px-3 py-1 bg-professor-gold/20 text-professor-navy text-sm font-medium rounded mb-3">
+                          {award.year}
+                        </div>
+                        <h3 className="text-xl font-bold mb-2 text-professor-navy">{award.title}</h3>
+                        <p className="text-gray-600 mb-2">{award.organization}</p>
+                        {award.description && (
+                          <p className="text-gray-700 mt-2 italic">{award.description}</p>
+                        )}
+                      </div>
                     </div>
-                    <h3 className="text-xl font-bold mb-2 text-professor-navy">{award.title}</h3>
-                    <p className="text-gray-600 mb-2">{award.organization}</p>
-                    {award.description && (
-                      <p className="text-gray-700 mt-2 italic">{award.description}</p>
-                    )}
                   </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <div className="flex items-center mb-8">
+            <GraduationCap className="text-professor-navy mr-2" size={24} />
+            <h2 className="text-2xl font-bold text-professor-navy">PhD Supervision</h2>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div>
+                <h4 className="font-semibold text-lg mb-3">Completed</h4>
+                <div className="flex items-center">
+                  <div className="text-5xl font-bold text-professor-navy">{completedPhDScholars.length}</div>
+                  <div className="ml-4 text-gray-700">PhD students supervised to successful completion</div>
+                </div>
+              </div>
+              <div>
+                <h4 className="font-semibold text-lg mb-3">Ongoing</h4>
+                <div className="flex items-center">
+                  <div className="text-5xl font-bold text-professor-navy">15</div>
+                  <div className="ml-4 text-gray-700">PhD supervisions currently in progress</div>
+                </div>
+              </div>
+            </div>
+
+            <h4 className="text-xl font-bold mb-4 text-professor-navy border-b pb-2">Graduated PhD Scholars</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {completedPhDScholars.map((scholar, index) => (
+                <div key={index} className="p-4 border rounded-md hover:bg-gray-50 transition-colors">
+                  <div className="font-medium">{scholar.name}</div>
+                  <div className="text-sm text-gray-600">{scholar.university}</div>
+                  <div className="text-sm text-gray-500">Year of Completion: {scholar.year}</div>
                 </div>
               ))}
             </div>
@@ -154,26 +321,6 @@ const Awards = () => {
                 )}
               </div>
             ))}
-          </div>
-
-          <div className="mt-12 bg-professor-navy/5 p-6 rounded-lg">
-            <h3 className="text-xl font-bold mb-4 text-professor-navy">PhD Supervision</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="font-semibold text-lg mb-3">Completed</h4>
-                <div className="flex items-center justify-center">
-                  <div className="text-5xl font-bold text-professor-navy">19</div>
-                  <div className="ml-4 text-gray-700">PhD students supervised to successful completion</div>
-                </div>
-              </div>
-              <div>
-                <h4 className="font-semibold text-lg mb-3">Ongoing</h4>
-                <div className="flex items-center justify-center">
-                  <div className="text-5xl font-bold text-professor-navy">15</div>
-                  <div className="ml-4 text-gray-700">PhD supervisions currently in progress</div>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
       </div>
