@@ -1,9 +1,47 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Book, Award, Mail, FileText } from 'lucide-react';
+import { Book, Award, Mail, FileText, Image } from 'lucide-react';
+import { 
+  Carousel, 
+  CarouselContent, 
+  CarouselItem, 
+  CarouselNext, 
+  CarouselPrevious 
+} from "@/components/ui/carousel";
 
 const Index = () => {
+  // Gallery images array
+  const galleryImages = [
+    {
+      src: "/lovable-uploads/154a1db9-14ab-46c6-a28d-06be83c3d617.png",
+      alt: "Prof. Agarwal at IIT Jodhpur event with officials"
+    },
+    {
+      src: "/lovable-uploads/8f133d4b-1592-459e-8761-1d710aa6f5b9.png",
+      alt: "Prof. Agarwal receiving an award at IETE event"
+    },
+    {
+      src: "/lovable-uploads/065a8844-d692-4c08-8359-e74e08f3ef78.png",
+      alt: "Prof. Agarwal with Shri Alkesh Kumar Sharma"
+    },
+    {
+      src: "/lovable-uploads/5b29cdd8-96a9-4546-948f-52c52dfebb1d.png",
+      alt: "Laboratory image"
+    },
+    {
+      src: "/lovable-uploads/5cb700cb-39c9-4f24-b8ca-93771ce6fe13.png",
+      alt: "Research facility"
+    },
+    {
+      src: "/lovable-uploads/88895526-10d6-4f24-b178-692ff8f54572.png",
+      alt: "Academic event"
+    },
+    {
+      src: "/lovable-uploads/abf7fda2-952a-422b-a2a5-36e2adc42a90.png",
+      alt: "Research presentation"
+    }
+  ];
+
   return (
     <div>
       {/* Hero Section */}
@@ -21,7 +59,7 @@ const Index = () => {
             </p>
             <div className="space-y-2 mb-8">
               <p className="flex items-center">
-                <span className="font-medium mr-2">CEO:</span> AIOT Fab Lab, AIOT Innovation Hub, IIT Jodhpur
+                <span className="font-medium mr-2">CEO:</span> AIOT Innovation Hub Foundation, IIT Jodhpur
               </p>
               <p className="flex items-center">
                 <span className="font-medium mr-2">Chairman:</span> EUGC, Engineering Sciences, IIT Jodhpur
@@ -198,6 +236,40 @@ const Index = () => {
               <p className="text-gray-600">For 'Developing a low-cost multipurpose handheld Raman spectrometer'</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center gap-3 mb-10">
+            <div className="bg-professor-navy/10 p-2 rounded-full">
+              <Image className="text-professor-navy h-6 w-6" />
+            </div>
+            <h2 className="text-3xl font-bold font-serif">Gallery</h2>
+          </div>
+          
+          <Carousel className="w-full max-w-5xl mx-auto">
+            <CarouselContent>
+              {galleryImages.map((image, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-2 h-full">
+                    <div className="bg-gray-100 rounded-lg overflow-hidden h-64 shadow-md hover:shadow-lg transition-shadow duration-300">
+                      <img 
+                        src={image.src} 
+                        alt={image.alt} 
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="flex justify-center mt-4">
+              <CarouselPrevious className="relative static mx-2" />
+              <CarouselNext className="relative static mx-2" />
+            </div>
+          </Carousel>
         </div>
       </section>
 

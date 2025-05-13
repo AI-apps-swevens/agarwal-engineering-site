@@ -1,12 +1,14 @@
 
 import React from 'react';
+import { GalleryHorizontal } from 'lucide-react';
 
 interface PageHeaderProps {
   title: string;
   subtitle?: string;
+  showIcon?: boolean;
 }
 
-const PageHeader: React.FC<PageHeaderProps> = ({ title, subtitle }) => {
+const PageHeader: React.FC<PageHeaderProps> = ({ title, subtitle, showIcon = false }) => {
   return (
     <div className="bg-gradient-to-r from-professor-navy to-professor-navy/80 text-white py-12 md:py-20 relative overflow-hidden">
       {/* Abstract decorative pattern */}
@@ -22,7 +24,14 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, subtitle }) => {
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <h1 className="text-3xl md:text-5xl font-bold text-white mb-3">{title}</h1>
+        <div className="flex items-center gap-3 mb-4">
+          {showIcon && (
+            <div className="bg-professor-gold/20 p-2 rounded-full">
+              <GalleryHorizontal className="text-professor-gold h-6 w-6" />
+            </div>
+          )}
+          <h1 className="text-3xl md:text-5xl font-bold text-white">{title}</h1>
+        </div>
         {subtitle && (
           <p className="text-lg md:text-xl text-professor-gold max-w-2xl">{subtitle}</p>
         )}

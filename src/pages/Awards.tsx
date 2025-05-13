@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PageHeader from '../components/PageHeader';
 import { Award, GraduationCap } from 'lucide-react';
@@ -9,19 +8,19 @@ const Awards = () => {
       year: "2024",
       title: "Research Excellence-2024, Senior Researcher Award (Engineering)",
       organization: "IIT Jodhpur",
-      image: "/award-iitj-research.jpg"
+      image: "/lovable-uploads/154a1db9-14ab-46c6-a28d-06be83c3d617.png"
     },
     {
       year: "2021",
       title: "IETE-Bapuseetharam Award 2021",
       organization: "The Institution of Electronics and Telecommunication Engineers (IETE) India",
-      image: "/award-iete.jpg"
+      image: "/lovable-uploads/8f133d4b-1592-459e-8761-1d710aa6f5b9.png"
     },
     {
       year: "2021",
       title: "Outstanding Engineering Services to Society Award 2021",
       organization: "The Institute of Engineers (India) Rajasthan State Centre",
-      image: "/award-engineer-india.jpg"
+      image: "/lovable-uploads/065a8844-d692-4c08-8359-e74e08f3ef78.png"
     },
     {
       year: "2020",
@@ -209,7 +208,8 @@ const Awards = () => {
     <div>
       <PageHeader 
         title="Awards & Recognition" 
-        subtitle="Honoring Excellence in Research and Innovation" 
+        subtitle="Honoring Excellence in Research and Innovation"
+        showIcon={true}
       />
 
       <div className="container mx-auto px-4 py-12">
