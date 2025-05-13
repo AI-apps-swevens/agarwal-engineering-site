@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Linkedin } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -41,7 +42,8 @@ const Footer = () => {
               <li><a href="https://orcid.org/0000-0003-2204-9553" target="_blank" rel="noopener noreferrer" className="hover:text-professor-gold transition-colors">ORCID</a></li>
               <li><a href="https://www.scopus.com/authid/detail.uri?authorId=7401481014" target="_blank" rel="noopener noreferrer" className="hover:text-professor-gold transition-colors">Scopus ID</a></li>
               <li><a href="https://iitj.irins.org/profile/214545" target="_blank" rel="noopener noreferrer" className="hover:text-professor-gold transition-colors">Vidwan-ID</a></li>
-              <li><a href="https://iitj.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:text-professor-gold transition-colors">IIT Jodhpur</a></li>
+              <li><a href="https://iitj.ac.in/department/index.php?dept=ee&id=faculty_members" target="_blank" rel="noopener noreferrer" className="hover:text-professor-gold transition-colors">IIT Jodhpur</a></li>
+              <li><a href="https://www.linkedin.com/in/ajay-agarwal-72883431/" target="_blank" rel="noopener noreferrer" className="hover:text-professor-gold transition-colors flex items-center"><Linkedin className="h-4 w-4 mr-1" /> LinkedIn</a></li>
             </ul>
           </div>
         </div>

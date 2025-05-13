@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Mail, MapPin, Phone, Globe, Download } from 'lucide-react';
+import { Mail, MapPin, Phone, Globe, Download, Linkedin } from 'lucide-react';
 import PageHeader from '../components/PageHeader';
 import SocialLinks from '../components/SocialLinks';
 
@@ -123,9 +124,24 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="md:w-1/2">
-            <h2 className="text-2xl font-bold mb-6 text-professor-navy">Send Me an Email</h2>
-            <div className="bg-white shadow-md rounded-lg p-6">
+          <div className="w-full">
+            <h2 className="text-2xl font-bold mb-6 text-professor-navy">Location</h2>
+            <div className="bg-white shadow-md rounded-lg overflow-hidden h-[400px]">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.6539186973453!2d72.98785997638363!3d26.270883577108552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418c3710877771%3A0x79da5416d8e6d986!2sIndian%20Institute%20of%20Technology%20Jodhpur!5e0!3m2!1sen!2sin!4v1715676450558!5m2!1sen!2sin" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="IIT Jodhpur Map"
+                className="w-full h-full"
+              ></iframe>
+            </div>
+            
+            <div className="mt-10 bg-white shadow-md rounded-lg p-6">
+              <h3 className="font-medium text-lg mb-4">Send Me an Email</h3>
               <p className="mb-4">
                 If you would like to get in touch with me, please click the button below to send me an email:
               </p>

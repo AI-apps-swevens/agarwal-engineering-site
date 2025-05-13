@@ -39,6 +39,10 @@ const Index = () => {
     {
       src: "/lovable-uploads/abf7fda2-952a-422b-a2a5-36e2adc42a90.png",
       alt: "Research presentation"
+    },
+    {
+      src: "/lovable-uploads/2e0076ca-ce6a-4590-b427-670761f973d3.png",
+      alt: "National Technology Award ceremony"
     }
   ];
 

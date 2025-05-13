@@ -37,6 +37,7 @@ const About = () => {
                   <p><a href="https://orcid.org/0000-0003-2204-9553" target="_blank" rel="noopener noreferrer" className="text-professor-navy hover:text-professor-maroon underline">ORCiD</a></p>
                   <p><a href="https://www.scopus.com/authid/detail.uri?authorId=7401481014" target="_blank" rel="noopener noreferrer" className="text-professor-navy hover:text-professor-maroon underline">Scopus ID</a></p>
                   <p><a href="https://iitj.irins.org/profile/214545" target="_blank" rel="noopener noreferrer" className="text-professor-navy hover:text-professor-maroon underline">Vidwan-ID</a></p>
+                  <p><a href="https://www.linkedin.com/in/ajay-agarwal-72883431/" target="_blank" rel="noopener noreferrer" className="text-professor-navy hover:text-professor-maroon underline">LinkedIn</a></p>
                 </div>
               </div>
             </div>
@@ -46,16 +47,27 @@ const About = () => {
             <div className="space-y-8">
               <section>
                 <h2 className="text-2xl font-bold mb-4 text-professor-navy">Biography</h2>
-                <div className="prose max-w-none">
-                  <p className="mb-4">
-                    I am a Microelectronics / Semiconductor professional with more than 06 years of industrial experience and over 23 years of research & development and academic experience including adjunct faculty at various national and international universities (NUS, NTU, A*Star academy Singapore); involved in the micro fabrication and related facilities, developing courses and training programs in SEMICON space.
-                  </p>
-                  <p className="mb-4">
-                    As an expert, I am involved in the development of Nanotechnologies, MEMS, micro fluidics and Micro-sensors for industrial, MedTech and strategic needs.
-                  </p>
-                  <p className="mb-4">
-                    I have ~320 research publications in journals or conferences, ~110 invited/ plenary/ keynote talks and over 40 patents (granted or filled). I have supervised 19 PhD students so far & 15 PhD supervisions are on-going.
-                  </p>
+                <div className="flex flex-col md:flex-row gap-6 items-start mb-6">
+                  <div className="prose max-w-none md:w-3/5">
+                    <p className="text-lg font-semibold mb-4">
+                      "Prof. Ajay Agarwal: An intellectual harmonizing Policy, Industry, Research & Innovation to empower India's Semiconductor Ecosystem"
+                    </p>
+                    <p className="mb-4">
+                      An international thought leader operating at the intersection of government, corporate innovation, academic excellence, and research — enabling India's strategic capabilities in semiconductors and ESDM (Electronics System Design & Manufacturing). Professor Agarwal carries a unique blend of professional experience in Industry (6+ years, Academia & Research (24+ years) which makes him an important asset for organizations he is associated with.
+                    </p>
+                  </div>
+                  <div className="md:w-2/5">
+                    <div className="rounded-lg overflow-hidden shadow-md">
+                      <img 
+                        src="/lovable-uploads/2e0076ca-ce6a-4590-b427-670761f973d3.png" 
+                        alt="Prof. Agarwal receiving National Technology Award" 
+                        className="w-full"
+                      />
+                      <p className="text-sm italic p-2 bg-gray-50">
+                        National Technology Award-2008, Singapore's highest honour presented to recognise outstanding research scientists and engineers for their invaluable contributions to the development of Science & Technology in Singapore.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </section>
 
@@ -63,7 +75,7 @@ const About = () => {
                 <h2 className="text-2xl font-bold mb-4 text-professor-navy">Current Positions</h2>
                 <div className="space-y-3">
                   <p>• Professor, Ex-Head, Department of Electrical Engineering, Indian Institute of Technology Jodhpur, Jodhpur</p>
-                  <p>• CEO, AIOT Fab Lab, AIOT Innovation Hub, IIT Jodhpur</p>
+                  <p>• CEO, AIOT Innovation Hub Foundation, IIT Jodhpur</p>
                   <p>• Chairman, EUGC, Engineering Sciences, IIT Jodhpur</p>
                   <p>• Adjunct faculty, Center for Smart Healthcare, IIT Jodhpur</p>
                   <p>• Director, Electronics Sector Skills Council of India (ESSCI), New Delhi</p>
@@ -104,8 +116,7 @@ const About = () => {
                       <li>Head, Department of Electrical Engineering (September 2022 – August 2024)</li>
                       <li>Senator, IIT Jodhpur</li>
                       <li>Chairman, Engineering Science Undergraduate Committee IITJ</li>
-                      <li>Coordinator, AIOT Fab including clean rooms facilities, IIT Jodhpur</li>
-                      <li>President, Institution's Innovation Council, IIT Jodhpur</li>
+                      <li>Coordinator, AIOT Fab including clean rooms facilities, IIT Jodhpur (April 2022 – March 2025)</li>
                       <li>Member, School Research Committee, School of AI and Data Science, IIT Jodhpur</li>
                     </ul>
                   </div>
@@ -117,7 +128,6 @@ const About = () => {
                       <li>Led multiple high-value projects including Nano-Biosensors and Microfluidics for Health Care (CSIR, ₹29.19 Crores)</li>
                       <li>Coordinated development of MEMS Technology based Pressure and Temperature Sensors for Indian Navy</li>
                       <li>Served as nodal officer for Research Initiative on Nano-devices and Nano-Sensors (R-Nano)</li>
-                      <li>Led Advanced Facility for Nano-Electronics (AFNE) project</li>
                       <li>Developed microfluidic lab-on-a-chip sensors under DST-UKIERI program</li>
                     </ul>
                   </div>
@@ -172,7 +182,7 @@ const About = () => {
                   <li>Vice-Chairperson, IEEE Rajasthan Subsection, 2021, 2023 & 2024</li>
                   <li>Honorary Member, IIT Bombay Industry Consortium on Strategic Electronics</li>
                   <li>IEEE United States - Senior Member (SM-06, M-03)</li>
-                  <li>IETE India – Life Fellow and Chairman, IETE, Pilani</li>
+                  <li>IETE India, Life Fellow: Secretary (2016-20) & Chairman (2020-2022) for IETE, Pilani</li>
                   <li>Semiconductor Society of India – Life Fellow and Chairman, Pilani</li>
                   <li>MSI, India – Life Fellow</li>
                   <li>The Institution of Engineers (India) - Life Fellow</li>
