@@ -8,7 +8,6 @@ import {
   CarouselNext, 
   CarouselPrevious 
 } from "@/components/ui/carousel";
-import { useCarousel } from "@/components/ui/carousel";
 
 const Index = () => {
   // Gallery images array
