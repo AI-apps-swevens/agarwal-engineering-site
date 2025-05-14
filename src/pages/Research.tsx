@@ -11,8 +11,7 @@ const Research = () => {
         "Design, Development & Fabrication of MEMS Technology based Pressure and Temperature Sensors for Indian Navy",
         "Development of microfluidic lab-on-a-chip sensors for biomedical applications",
         "Research on MEMS-based RF switches and actuators"
-      ],
-      image: "/lovable-uploads/abf7fda2-952a-422b-a2a5-36e2adc42a90.png"
+      ]
     },
     {
       title: "Silicon Nanowire Sensors",
@@ -21,8 +20,7 @@ const Research = () => {
         "Development of Silicon Nanowire based sensors platform using CMOS technology for bio-chemical detections",
         "Nanowire Sensor Array Development using Top-Down CMOS Technology",
         "Label-Free Detection of Cardiac Biomarkers with CMOS-Compatible Silicon Nanowire Sensor Arrays"
-      ],
-      image: "/lovable-uploads/5b29cdd8-96a9-4546-948f-52c52dfebb1d.png"
+      ]
     },
     {
       title: "Nano-Biosensors and Microfluidics for Healthcare",
@@ -31,8 +29,7 @@ const Research = () => {
         "Nano-Biosensors and Microfluidics for Health Care – Multidisciplinary, multi-institutional project",
         "Development of microfluidic chips for cell separation and analysis",
         "Integrated sample preparation and detection chip for Dengue and Cardiac diseases"
-      ],
-      image: "/lovable-uploads/5cb700cb-39c9-4f24-b8ca-93771ce6fe13.png"
+      ]
     },
     {
       title: "Gas Sensing and Environmental Monitoring",
@@ -41,26 +38,25 @@ const Research = () => {
         "High resolution air quality monitoring and air pollutant data analytics",
         "Development of gas sensors for volatile organic compounds detection",
         "Low power highly sensitive platforms for gas sensing applications"
-      ],
-      image: "/lovable-uploads/88895526-10d6-4f24-b178-692ff8f54572.png"
+      ]
     }
   ];
 
-  const currentProjects = [
+  const activeProjects = [
     {
-      title: "AIOT Fab Lab and Innovation Hub",
-      description: "Leading the AIOT Fab Lab at IIT Jodhpur, focusing on the development of innovative sensors and IoT solutions for various applications.",
-      role: "CEO"
+      title: "Joint PI - Centre of Excellence (CoE) AyurTech",
+      description: "Development of technologies for Ayurvedic research and applications.",
+      funding: "Ministry of AYUSH, Govt of India"
     },
     {
-      title: "MedTech Center for Healthcare Innovation",
-      description: "Collaborating with AIIMS Jodhpur on medical technologies development through the Center for Smart Healthcare.",
-      role: "Adjunct Faculty"
+      title: "Institute PI - Comprehensive Risk Assessment data for Heritage Sites and Development of Smart Heritage Management Systems",
+      description: "Creating systems for monitoring and preserving heritage sites through smart technology.",
+      funding: "Department of Science & Technology (DST), Govt of India"
     },
     {
-      title: "Semiconductor Manufacturing Initiative",
-      description: "Working on strategic electronics development as Independent Director at Sahasra Semiconductors and Director at Electronics Sector Skills Council of India.",
-      role: "Independent Director"
+      title: "PI - AIOT based Water Monitoring Technologies",
+      description: "Developing Internet of Things solutions for water quality monitoring and management.",
+      funding: "DIA-CoE, IIT Jodhpur"
     }
   ];
 
@@ -87,26 +83,15 @@ const Research = () => {
           <div className="space-y-12">
             {researchAreas.map((area, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-                <div className="flex flex-col md:flex-row">
-                  <div className="md:w-1/3">
-                    <div className="h-full">
-                      <img 
-                        src={area.image} 
-                        alt={area.title} 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
-                  <div className="md:w-2/3 p-6">
-                    <h3 className="text-xl font-bold mb-3 text-professor-navy">{area.title}</h3>
-                    <p className="text-gray-700 mb-4">{area.description}</p>
-                    <h4 className="font-semibold mb-2 text-professor-maroon">Key Projects:</h4>
-                    <ul className="list-disc pl-5 space-y-1">
-                      {area.projects.map((project, idx) => (
-                        <li key={idx}>{project}</li>
-                      ))}
-                    </ul>
-                  </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-3 text-professor-navy">{area.title}</h3>
+                  <p className="text-gray-700 mb-4">{area.description}</p>
+                  <h4 className="font-semibold mb-2 text-professor-maroon">Key Projects:</h4>
+                  <ul className="list-disc pl-5 space-y-1">
+                    {area.projects.map((project, idx) => (
+                      <li key={idx}>{project}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             ))}
@@ -114,50 +99,17 @@ const Research = () => {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-8 text-professor-navy">Current Projects</h2>
+          <h2 className="text-2xl font-bold mb-8 text-professor-navy">Active Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {currentProjects.map((project, index) => (
+            {activeProjects.map((project, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md p-6 border-t-4 border-professor-navy">
-                <span className="inline-block px-3 py-1 bg-professor-gold/20 text-professor-navy text-sm font-medium rounded mb-3">
-                  {project.role}
-                </span>
                 <h3 className="text-xl font-bold mb-3 text-professor-navy">{project.title}</h3>
-                <p className="text-gray-700">{project.description}</p>
+                <p className="text-gray-700 mb-4">{project.description}</p>
+                <div className="text-sm text-professor-navy bg-professor-navy/10 p-2 rounded">
+                  <strong>Funding:</strong> {project.funding}
+                </div>
               </div>
             ))}
-          </div>
-        </section>
-
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-6 text-professor-navy">Research Facilities</h2>
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <p className="text-gray-700 mb-4">
-              As the Coordinator of the AIOT Fab including clean rooms facilities at IIT Jodhpur, I oversee state-of-the-art research infrastructure that enables cutting-edge work in microelectronics and sensor development. Our facilities include:
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-              <div>
-                <h3 className="text-lg font-semibold mb-3 text-professor-navy">Fabrication Facilities</h3>
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>Clean room facilities for micro and nanofabrication</li>
-                  <li>LPCVD and PECVD systems</li>
-                  <li>Photolithography equipment</li>
-                  <li>Metallization systems</li>
-                  <li>Advanced etching facilities</li>
-                  <li>3D printing capabilities for rapid prototyping</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-3 text-professor-navy">Characterization Tools</h3>
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>Scanning electron microscopy</li>
-                  <li>Atomic force microscopy</li>
-                  <li>Electrical characterization equipment</li>
-                  <li>Optical spectroscopy systems</li>
-                  <li>Surface profilometry</li>
-                  <li>Advanced testing setups for sensor validation</li>
-                </ul>
-              </div>
-            </div>
           </div>
         </section>
 

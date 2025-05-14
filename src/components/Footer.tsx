@@ -17,8 +17,9 @@ const Footer = () => {
             <p className="mb-2">Prof. Ajay Agarwal</p>
             <p className="mb-2">Professor, Ex-Head, Department of Electrical Engineering</p>
             <p className="mb-2">Indian Institute of Technology Jodhpur</p>
-            <p className="mb-2">5123 Type-B, IIT Jodhpur Campus</p>
-            <p className="mb-2">NH 62, Nagaur Road, Karwar-342030 Jodhpur (INDIA)</p>
+            <p className="mb-2">Office Address: 313, Department of Electrical Engineering,</p>
+            <p className="mb-2">Indian Institute of Technology Jodhpur, NH 62 Nagaur Road,</p>
+            <p className="mb-2">Karwar Jodhpur, Rajasthan, India 342030</p>
           </div>
           
           {/* Quick Links */}

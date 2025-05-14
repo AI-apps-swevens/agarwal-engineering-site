@@ -27,13 +27,13 @@ const Awards = () => {
       title: "CSIR Technology Award (Innovation)",
       organization: "Council of Scientific and Industrial Research",
       description: "For 'Developing a low-cost multipurpose handheld Raman spectrometer for automated analytical and diagnostic application, particularly for testing of food and pharmaceutical adulteration'.",
-      image: "/award-csir.jpg"
+      image: "scne 2019 2.jpg"
     },
     {
       year: "2013",
       title: "DST-UKIERI Thematic Partnerships Award",
       organization: "India",
-      image: "/award-ukieri.jpg"
+      image: "UK-India Education and Research Initiative.jpg"
     },
     {
       year: "2009",
@@ -47,19 +47,19 @@ const Awards = () => {
       title: "National Technology Award",
       organization: "Singapore",
       description: "Singapore's highest honour presented to recognise outstanding research scientists and engineers for their invaluable contributions to the development of Science & Technology in Singapore. Award conferred for 'pioneering the novel transistor architectures and a new class of electronic bio-sensors based on Silicon-nanowires'.",
-      image: "/award-singapore.jpg"
+      image: "National Science & Technology Awards 2008 in Singapore.jpg"
     },
     {
       year: "2006",
       title: "Collaboration Development Award",
       organization: "British High Commission, Singapore",
-      image: "/award-british-high.jpg"
+      image: "British High commission Singapore.jpg"
     },
     {
       year: "2005",
       title: "Collaboration Development Award",
       organization: "British High Commission, Singapore",
-      image: "/award-british-high.jpg"
+      image: "British High commission Singapore.jpg"
     }
   ];
 

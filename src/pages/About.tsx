@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PageHeader from '../components/PageHeader';
 
@@ -28,7 +27,7 @@ const About = () => {
                   <p><span className="font-semibold">Alternative Email:</span> dr.ajay123@gmail.com</p>
                   <p><span className="font-semibold">Phone:</span> +91 8058598903 (M)</p>
                   <p><span className="font-semibold">Office:</span> +91 291 2801378</p>
-                  <p><span className="font-semibold">Address:</span> 5123 Type-B, IIT Jodhpur Campus, NH 62, Nagaur Road, Karwar-342030 Jodhpur (INDIA)</p>
+                  <p><span className="font-semibold">Office Address:</span> 313, Department of Electrical Engineering, Indian Institute of Technology Jodhpur, NH 62 Nagaur Road, Karwar Jodhpur, Rajasthan, India 342030</p>
                 </div>
 
                 <h3 className="text-xl font-bold mb-4 mt-8 text-professor-navy">Professional Links</h3>
@@ -47,27 +46,13 @@ const About = () => {
             <div className="space-y-8">
               <section>
                 <h2 className="text-2xl font-bold mb-4 text-professor-navy">Biography</h2>
-                <div className="flex flex-col md:flex-row gap-6 items-start mb-6">
-                  <div className="prose max-w-none md:w-3/5">
-                    <p className="text-lg font-semibold mb-4">
-                      "Prof. Ajay Agarwal: An intellectual harmonizing Policy, Industry, Research & Innovation to empower India's Semiconductor Ecosystem"
-                    </p>
-                    <p className="mb-4">
-                      An international thought leader operating at the intersection of government, corporate innovation, academic excellence, and research — enabling India's strategic capabilities in semiconductors and ESDM (Electronics System Design & Manufacturing). Professor Agarwal carries a unique blend of professional experience in Industry (6+ years, Academia & Research (24+ years) which makes him an important asset for organizations he is associated with.
-                    </p>
-                  </div>
-                  <div className="md:w-2/5">
-                    <div className="rounded-lg overflow-hidden shadow-md">
-                      <img 
-                        src="/lovable-uploads/2e0076ca-ce6a-4590-b427-670761f973d3.png" 
-                        alt="Prof. Agarwal receiving National Technology Award" 
-                        className="w-full"
-                      />
-                      <p className="text-sm italic p-2 bg-gray-50">
-                        National Technology Award-2008, Singapore's highest honour presented to recognise outstanding research scientists and engineers for their invaluable contributions to the development of Science & Technology in Singapore.
-                      </p>
-                    </div>
-                  </div>
+                <div className="prose max-w-none">
+                  <p className="text-lg font-semibold mb-4">
+                    "Prof. Ajay Agarwal: An intellectual harmonizing Policy, Industry, Research & Innovation to empower India's Semiconductor Ecosystem"
+                  </p>
+                  <p className="mb-4">
+                    An international thought leader operating at the intersection of government, corporate innovation, academic excellence, and research — enabling India's strategic capabilities in semiconductors and ESDM (Electronics System Design & Manufacturing). Professor Agarwal carries a unique blend of professional experience in Industry (6+ years, Academia & Research (24+ years) which makes him an important asset for organizations he is associated with.
+                  </p>
                 </div>
               </section>
 
@@ -80,7 +65,7 @@ const About = () => {
                   <p>• Adjunct faculty, Center for Smart Healthcare, IIT Jodhpur</p>
                   <p>• Director, Electronics Sector Skills Council of India (ESSCI), New Delhi</p>
                   <p>• Independent Director, Sahasra Semiconductors Pvt Ltd., New Delhi</p>
-                  <p>• Director & Chairman BoD, Sarbit Innovations &</p>
+                  <p>• Director & Chairman BoD, Sarbit Innovations private limited Jodhpur</p>
                   <p>• Mentor, Caldor Health Technologies</p>
                 </div>
               </section>
@@ -95,11 +80,11 @@ const About = () => {
                     <p><strong>Thesis title:</strong> Fabrication and Characterization of High Tc Bulk Materials and Films for Superconducting Devices</p>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold">M.S. (Systems & Information)</h3>
+                    <h3 className="text-lg font-semibold">M.S.</h3>
                     <p>Birla Institute of Technology & Science, Pilani, India, 1991</p>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold">B.Sc. Engineering (Metallurgy)</h3>
+                    <h3 className="text-lg font-semibold">B.Sc. Engineering</h3>
                     <p>Regional Engineering College (now NIT), Rourkela, India, 1989</p>
                   </div>
                 </div>

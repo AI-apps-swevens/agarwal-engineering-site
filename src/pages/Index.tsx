@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Book, Award, Mail, FileText, Image } from 'lucide-react';
 import { 
@@ -8,6 +8,7 @@ import {
   CarouselNext, 
   CarouselPrevious 
 } from "@/components/ui/carousel";
+import { useCarousel } from "@/components/ui/carousel";
 
 const Index = () => {
   // Gallery images array
@@ -46,6 +47,28 @@ const Index = () => {
     }
   ];
 
+  // Create a reference to access the carousel API
+  const apiRef = useRef(null);
+  
+  // Set up auto-scrolling for the carousel
+  useEffect(() => {
+    const api = apiRef.current;
+    
+    if (!api) return;
+    
+    // Auto-scroll every 3 seconds
+    const interval = setInterval(() => {
+      if (api.canScrollNext()) {
+        api.scrollNext();
+      } else {
+        api.scrollTo(0); // Loop back to the beginning
+      }
+    }, 3000);
+    
+    // Cleanup the interval on unmount
+    return () => clearInterval(interval);
+  }, [apiRef]);
+
   return (
     <div>
       {/* Hero Section */}
@@ -64,9 +87,6 @@ const Index = () => {
             <div className="space-y-2 mb-8">
               <p className="flex items-center">
                 <span className="font-medium mr-2">CEO:</span> AIOT Innovation Hub Foundation, IIT Jodhpur
-              </p>
-              <p className="flex items-center">
-                <span className="font-medium mr-2">Chairman:</span> EUGC, Engineering Sciences, IIT Jodhpur
               </p>
               <p className="flex items-center">
                 <span className="font-medium mr-2">Adjunct Faculty:</span> Center for Smart Healthcare, IIT Jodhpur
@@ -253,7 +273,12 @@ const Index = () => {
             <h2 className="text-3xl font-bold font-serif">Gallery</h2>
           </div>
           
-          <Carousel className="w-full max-w-5xl mx-auto">
+          <Carousel 
+            className="w-full max-w-5xl mx-auto"
+            setApi={(api) => {
+              apiRef.current = api;
+            }}
+          >
             <CarouselContent>
               {galleryImages.map((image, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">

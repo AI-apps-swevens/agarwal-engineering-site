@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, MapPin, Phone, Globe, Download, Linkedin } from 'lucide-react';
+import { Mail, MapPin, Phone, Globe, Linkedin } from 'lucide-react';
 import PageHeader from '../components/PageHeader';
 import SocialLinks from '../components/SocialLinks';
 
@@ -53,11 +53,12 @@ const Contact = () => {
                   <MapPin className="h-5 w-5 text-professor-navy" />
                 </div>
                 <div>
-                  <h3 className="font-medium text-lg">Address</h3>
+                  <h3 className="font-medium text-lg">Office Address</h3>
                   <p className="text-gray-600">
-                    5123 Type-B, IIT Jodhpur Campus,<br />
-                    NH 62, Nagaur Road, Karwar-342030<br />
-                    Jodhpur (INDIA)
+                    313, Department of Electrical Engineering,<br />
+                    Indian Institute of Technology Jodhpur,<br />
+                    NH 62 Nagaur Road, Karwar Jodhpur,<br />
+                    Rajasthan, India 342030
                   </p>
                 </div>
               </div>
@@ -112,16 +113,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-
-            <div className="mt-10">
-              <a 
-                href="/path-to-cv.pdf" 
-                className="flex items-center bg-professor-navy text-white px-5 py-2.5 rounded-md hover:bg-professor-navy/90 transition-colors w-max"
-              >
-                <Download className="h-5 w-5 mr-2" />
-                Download CV
-              </a>
-            </div>
           </div>
 
           <div className="w-full">
@@ -138,20 +129,6 @@ const Contact = () => {
                 title="IIT Jodhpur Map"
                 className="w-full h-full"
               ></iframe>
-            </div>
-            
-            <div className="mt-10 bg-white shadow-md rounded-lg p-6">
-              <h3 className="font-medium text-lg mb-4">Send Me an Email</h3>
-              <p className="mb-4">
-                If you would like to get in touch with me, please click the button below to send me an email:
-              </p>
-              <a 
-                href="mailto:ajayagarwal@iitj.ac.in?subject=Research%20Inquiry" 
-                className="inline-flex items-center bg-professor-navy text-white font-medium py-3 px-6 rounded-lg hover:bg-professor-navy/90 transition-colors"
-              >
-                <Mail className="mr-2" size={20} />
-                Email Professor Agarwal
-              </a>
             </div>
           </div>
         </div>
