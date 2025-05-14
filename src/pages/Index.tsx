@@ -21,10 +21,6 @@ const Index = () => {
       alt: "Prof. Agarwal receiving an award at IETE event"
     },
     {
-      src: "/lovable-uploads/065a8844-d692-4c08-8359-e74e08f3ef78.png",
-      alt: "Prof. Agarwal with Shri Alkesh Kumar Sharma"
-    },
-    {
       src: "/lovable-uploads/5b29cdd8-96a9-4546-948f-52c52dfebb1d.png",
       alt: "Laboratory image"
     },

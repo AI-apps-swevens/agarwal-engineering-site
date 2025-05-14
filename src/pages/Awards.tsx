@@ -1,3 +1,4 @@
+
 import React from 'react';
 import PageHeader from '../components/PageHeader';
 import { Award, GraduationCap } from 'lucide-react';
@@ -14,26 +15,26 @@ const Awards = () => {
       year: "2021",
       title: "IETE-Bapuseetharam Award 2021",
       organization: "The Institution of Electronics and Telecommunication Engineers (IETE) India",
-      image: "/lovable-uploads/8f133d4b-1592-459e-8761-1d710aa6f5b9.png"
+      image: "/lovable-uploads/ea137260-1400-48b3-8aff-277da1e0bfb0.png"
     },
     {
       year: "2021",
       title: "Outstanding Engineering Services to Society Award 2021",
       organization: "The Institute of Engineers (India) Rajasthan State Centre",
-      image: "/lovable-uploads/065a8844-d692-4c08-8359-e74e08f3ef78.png"
+      image: "/lovable-uploads/d7e5b80c-9179-4b15-b140-8a73b814c5c8.png"
     },
     {
       year: "2020",
       title: "CSIR Technology Award (Innovation)",
       organization: "Council of Scientific and Industrial Research",
       description: "For 'Developing a low-cost multipurpose handheld Raman spectrometer for automated analytical and diagnostic application, particularly for testing of food and pharmaceutical adulteration'.",
-      image: "scne 2019 2.jpg"
+      image: "/lovable-uploads/c4c1e07a-da97-4cc4-9130-fffd690b3f7d.png"
     },
     {
       year: "2013",
       title: "DST-UKIERI Thematic Partnerships Award",
       organization: "India",
-      image: "UK-India Education and Research Initiative.jpg"
+      image: "/lovable-uploads/91f246ed-c667-46da-bfe2-7a19526464da.png"
     },
     {
       year: "2009",
@@ -47,19 +48,19 @@ const Awards = () => {
       title: "National Technology Award",
       organization: "Singapore",
       description: "Singapore's highest honour presented to recognise outstanding research scientists and engineers for their invaluable contributions to the development of Science & Technology in Singapore. Award conferred for 'pioneering the novel transistor architectures and a new class of electronic bio-sensors based on Silicon-nanowires'.",
-      image: "National Science & Technology Awards 2008 in Singapore.jpg"
+      image: "/lovable-uploads/2e0076ca-ce6a-4590-b427-670761f973d3.png"
     },
     {
       year: "2006",
       title: "Collaboration Development Award",
       organization: "British High Commission, Singapore",
-      image: "British High commission Singapore.jpg"
+      image: "/lovable-uploads/93b6c656-020b-430d-8d91-51327fde7c1f.png"
     },
     {
       year: "2005",
       title: "Collaboration Development Award",
       organization: "British High Commission, Singapore",
-      image: "British High commission Singapore.jpg"
+      image: "/lovable-uploads/93b6c656-020b-430d-8d91-51327fde7c1f.png"
     }
   ];
 
@@ -108,97 +109,97 @@ const Awards = () => {
 
   const completedPhDScholars = [
     {
-      name: "Ms Tang Min",
+      name: "Dr. Tang Min",
       university: "Nanyang Technological University, Singapore",
       year: 2007
     },
     {
-      name: "Ms Bi Xinyan",
+      name: "Dr. Bi Xinyan",
       university: "National University of Singapore, Singapore",
       year: 2009
     },
     {
-      name: "Mr Tze Sian Pui",
+      name: "Dr. Tze Sian Pui",
       university: "Nanyang Technological University, Singapore",
       year: 2010
     },
     {
-      name: "Mr Venkateswaran PS",
+      name: "Dr. Venkateswaran PS",
       university: "University of Petroleum and Energy Studies, Dehradun India",
       year: 2016
     },
     {
-      name: "Mr Rahul Prajesh",
+      name: "Dr. Rahul Prajesh",
       university: "AcSIR, CSIR-CEERI, Pilani",
       year: 2018
     },
     {
-      name: "Mr Rohit Singh",
+      name: "Dr. Rohit Singh",
       university: "IIT Indore",
       year: 2018
     },
     {
-      name: "Mrs Smiti Sachdeva",
+      name: "Dr. Smiti Sachdeva",
       university: "Thapar University",
       year: 2019
     },
     {
-      name: "Mr Pankaj Bhooshan Agarwal",
+      name: "Dr. Pankaj Bhooshan Agarwal",
       university: "AcSIR, CSIR-CEERI, Pilani",
       year: 2019
     },
     {
-      name: "Mrs Tamalika Bhakat",
+      name: "Dr. Tamalika Bhakat",
       university: "BITS, Pilani",
       year: 2019
     },
     {
-      name: "Mr. Md Arif Khan",
+      name: "Dr. Md Arif Khan",
       university: "IIT Indore",
       year: 2020
     },
     {
-      name: "Ms. Prerna Balyan",
+      name: "Dr. Prerna Balyan",
       university: "AcSIR, CSIR-CEERI, Pilani",
       year: 2021
     },
     {
-      name: "Ms. Anju Yadav",
+      name: "Dr. Anju Yadav",
       university: "AcSIR, CSIR-CEERI, Pilani",
       year: 2021
     },
     {
-      name: "Mr Arun Johar",
+      name: "Dr. Arun Johar",
       university: "MNIT, Jaipur",
       year: 2021
     },
     {
-      name: "Ms. Sumita Choudhary",
+      name: "Dr. Sumita Choudhary",
       university: "BITS, Pilani",
       year: 2021
     },
     {
-      name: "Mr Satya Dev",
+      name: "Dr. Satya Dev",
       university: "GJU, Hissar",
       year: 2022
     },
     {
-      name: "Mr Pawan Kumar",
+      name: "Dr. Pawan Kumar",
       university: "IIT Indore",
       year: 2023
     },
     {
-      name: "Mr Sanjay Kumar",
+      name: "Dr. Sanjay Kumar",
       university: "IIT Indore",
       year: 2023
     },
     {
-      name: "Mr Vikram Maharshi",
+      name: "Dr. Vikram Maharshi",
       university: "IIT Delhi",
       year: 2023
     },
     {
-      name: "Mr. Rakesh Kumar Saini",
+      name: "Dr. Rakesh Kumar Saini",
       university: "AcSIR, CSIR-CEERI, Pilani",
       year: 2024
     }
